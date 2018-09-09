@@ -38,6 +38,7 @@ class ToastItemCollectionViewCell: UICollectionViewCell {
     ///
     /// - parameter carouselInset: The inset of the related SPBCarousel view
     open func scale(withCarouselInset carouselInset: CGFloat = 0, contentOffSet: CGFloat = 0, scale: CGFloat) {
+        guard scale <= 1, scale >= 0 else {return}
         let affineIdentity = CGAffineTransform.identity
         
         // Scale our mainView and set it's alpha value

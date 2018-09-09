@@ -22,8 +22,8 @@ var toastMainViewBackgroundColor: UIColor {
     return .red
 }
 
-var itemHeight: CGFloat {
-    return screenHeight/4
+var toastItemSize: CGSize {
+    return CGSize(width: screenWidth - 30, height: screenHeight/4)
 }
 
 let ToastItemCellIdentifier = "ToastItemCollectionViewCell"

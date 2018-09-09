@@ -27,8 +27,7 @@ class CarousalLayout: UICollectionViewFlowLayout {
         
         // Set itemSize based on total width and inset
         itemSize = collectionViewSize
-        itemSize.width = 300 //itemSize.width - (inset * 2)
-        itemSize.height = 200
+        itemSize = toastItemSize
         
         // Set scrollDirection and paging
         scrollDirection = .vertical

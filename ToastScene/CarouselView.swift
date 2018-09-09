@@ -30,7 +30,7 @@ class CarouselView: UICollectionView {
             
             // Set the invisibleScrollView contentSize width based on number of items
             let contentWidth = invisibleScrollView.frame.width// invisibleScrollView.frame.width * CGFloat(numberItems)
-            let contentHeight = itemHeight * CGFloat(numberItems)
+            let contentHeight = toastItemSize.height * CGFloat(numberItems)
             invisibleScrollView.contentSize = CGSize(width: contentWidth, height: contentHeight)
         }
     }
