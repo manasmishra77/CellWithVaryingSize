@@ -14,6 +14,14 @@
 		B6005EEA2144FCB3003C2D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6005EE82144FCB3003C2D69 /* LaunchScreen.storyboard */; };
 		B6005EF52144FCB3003C2D69 /* ToastSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6005EF42144FCB3003C2D69 /* ToastSceneTests.swift */; };
 		B6005F002144FCB3003C2D69 /* ToastSceneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6005EFF2144FCB3003C2D69 /* ToastSceneUITests.swift */; };
+		B6005F102144FEFF003C2D69 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6005F0F2144FEFF003C2D69 /* CarouselView.swift */; };
+		B6005F122144FF84003C2D69 /* CarousalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6005F112144FF84003C2D69 /* CarousalLayout.swift */; };
+		B6005F182145005A003C2D69 /* ToastCollectionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6005F172145005A003C2D69 /* ToastCollectionConstants.swift */; };
+		B6005F1A214501EB003C2D69 /* ToastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6005F19214501EB003C2D69 /* ToastViewModel.swift */; };
+		B6005F1D2145059C003C2D69 /* ToastItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6005F1B2145059C003C2D69 /* ToastItemCollectionViewCell.swift */; };
+		B6005F1E2145059C003C2D69 /* ToastItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6005F1C2145059C003C2D69 /* ToastItemCollectionViewCell.xib */; };
+		B6005F21214506EE003C2D69 /* ToastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6005F1F214506EE003C2D69 /* ToastViewController.swift */; };
+		B6005F22214506EE003C2D69 /* ToastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6005F20214506EE003C2D69 /* ToastViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		B6005EFB2144FCB3003C2D69 /* ToastSceneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToastSceneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6005EFF2144FCB3003C2D69 /* ToastSceneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastSceneUITests.swift; sourceTree = "<group>"; };
 		B6005F012144FCB3003C2D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6005F0F2144FEFF003C2D69 /* CarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		B6005F112144FF84003C2D69 /* CarousalLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarousalLayout.swift; sourceTree = "<group>"; };
+		B6005F172145005A003C2D69 /* ToastCollectionConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCollectionConstants.swift; sourceTree = "<group>"; };
+		B6005F19214501EB003C2D69 /* ToastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewModel.swift; sourceTree = "<group>"; };
+		B6005F1B2145059C003C2D69 /* ToastItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6005F1C2145059C003C2D69 /* ToastItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		B6005F1F214506EE003C2D69 /* ToastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewController.swift; sourceTree = "<group>"; };
+		B6005F20214506EE003C2D69 /* ToastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,14 @@
 			children = (
 				B6005EDF2144FCB2003C2D69 /* AppDelegate.swift */,
 				B6005EE12144FCB2003C2D69 /* ViewController.swift */,
+				B6005F172145005A003C2D69 /* ToastCollectionConstants.swift */,
+				B6005F112144FF84003C2D69 /* CarousalLayout.swift */,
+				B6005F1F214506EE003C2D69 /* ToastViewController.swift */,
+				B6005F20214506EE003C2D69 /* ToastViewController.xib */,
+				B6005F19214501EB003C2D69 /* ToastViewModel.swift */,
+				B6005F0F2144FEFF003C2D69 /* CarouselView.swift */,
+				B6005F1B2145059C003C2D69 /* ToastItemCollectionViewCell.swift */,
+				B6005F1C2145059C003C2D69 /* ToastItemCollectionViewCell.xib */,
 				B6005EE32144FCB2003C2D69 /* Main.storyboard */,
 				B6005EE62144FCB3003C2D69 /* Assets.xcassets */,
 				B6005EE82144FCB3003C2D69 /* LaunchScreen.storyboard */,
@@ -230,8 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6005EEA2144FCB3003C2D69 /* LaunchScreen.storyboard in Resources */,
+				B6005F1E2145059C003C2D69 /* ToastItemCollectionViewCell.xib in Resources */,
 				B6005EE72144FCB3003C2D69 /* Assets.xcassets in Resources */,
 				B6005EE52144FCB2003C2D69 /* Main.storyboard in Resources */,
+				B6005F22214506EE003C2D69 /* ToastViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6005EE22144FCB2003C2D69 /* ViewController.swift in Sources */,
+				B6005F122144FF84003C2D69 /* CarousalLayout.swift in Sources */,
+				B6005F1D2145059C003C2D69 /* ToastItemCollectionViewCell.swift in Sources */,
 				B6005EE02144FCB2003C2D69 /* AppDelegate.swift in Sources */,
+				B6005F21214506EE003C2D69 /* ToastViewController.swift in Sources */,
+				B6005F102144FEFF003C2D69 /* CarouselView.swift in Sources */,
+				B6005F182145005A003C2D69 /* ToastCollectionConstants.swift in Sources */,
+				B6005F1A214501EB003C2D69 /* ToastViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
