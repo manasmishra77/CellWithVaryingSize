@@ -22,10 +22,14 @@ var toastMainViewBackgroundColor: UIColor {
     return .red
 }
 
+var itemHeight: CGFloat {
+    return screenHeight/4
+}
+
 let ToastItemCellIdentifier = "ToastItemCollectionViewCell"
 
 func getScale(offSet: CGFloat, cellY: CGFloat) -> CGFloat {
-    let actualY = cellY - offSet
+    let actualY = cellY - offSet + 60
     var scale: CGFloat = 0
     if actualY > (screenMiddlePoint) {
         scale = (1 - ((actualY - screenMiddlePoint)/screenMiddlePoint))
