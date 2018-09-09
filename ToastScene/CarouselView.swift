@@ -89,7 +89,7 @@ fileprivate extension PrivateAPI {
         /// Add our 'invisible' scrollview
         invisibleScrollView = UIScrollView(frame: bounds)
         invisibleScrollView.translatesAutoresizingMaskIntoConstraints = false
-        invisibleScrollView.isPagingEnabled = true
+        invisibleScrollView.isPagingEnabled = false
         invisibleScrollView.showsHorizontalScrollIndicator = false
         
         /*
