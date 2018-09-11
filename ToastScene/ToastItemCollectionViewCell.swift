@@ -11,8 +11,21 @@ import UIKit
 class ToastItemCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var toastLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var senderName: UILabel!
+    @IBOutlet weak var senderFirstCharLabel: UILabel!
+    @IBOutlet weak var labelConstraintLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var labelHolderTraillingConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var firstCharLeadingConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var fristCharLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        toastLabel.text = "God bless you"
+        timeLabel.text = "10 September 2018"
+        senderName.text = "Vaibhav Kumar"
         // Initialization code
     }
     
@@ -32,6 +45,19 @@ class ToastItemCollectionViewCell: UICollectionViewCell {
         super.prepareForReuse()
         mainView.transform = CGAffineTransform.identity
         mainView.alpha = 1.0
+    }
+    
+    func setDefaultPositions(cellIndex: Int) {
+        if (cellIndex%2 == 0) {
+            labelConstraintLeadingConstraint.constant = 85
+            labelHolderTraillingConstraint.constant = 10
+            firstCharLeadingConstraint.constant = 10
+        }
+        else {
+            labelConstraintLeadingConstraint.constant = 10
+            labelHolderTraillingConstraint.constant = 75
+            firstCharLeadingConstraint.constant = self.frame.width - fristCharLabel.frame.width - 10
+        }
     }
     
     /// Scale the cell when it is scrolled

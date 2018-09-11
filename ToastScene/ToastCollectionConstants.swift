@@ -21,9 +21,10 @@ var screenMiddlePoint: CGFloat {
 var toastMainViewBackgroundColor: UIColor {
     return .red
 }
+let BackgroundGifImageName = "bubble4"
 
 var toastItemSize: CGSize {
-    return CGSize(width: screenWidth - 30, height: screenHeight/4)
+    return CGSize(width: screenWidth - 60, height: screenHeight/4)
 }
 
 let ToastItemCellIdentifier = "ToastItemCollectionViewCell"
@@ -40,3 +41,38 @@ func getScale(offSet: CGFloat, cellY: CGFloat) -> CGFloat {
     print("Scale: \(scale)")
     return scale
 }
+
+/*
+extension UIView {
+    func setRadius(radius: CGFloat? = nil) {
+        self.layer.cornerRadius = radius ?? self.frame.width / 2;
+        self.layer.masksToBounds = true;
+    }
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor? {
+        get {
+            return UIColor(cgColor: layer.borderColor!)
+        }
+        set {
+            layer.borderColor = newValue?.cgColor
+        }
+    }
+}*/

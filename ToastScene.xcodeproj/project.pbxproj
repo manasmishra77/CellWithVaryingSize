@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190DDE1021479D5B0005A8E2 /* DeleteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190DDE0F21479D5B0005A8E2 /* DeleteMessageView.swift */; };
+		190DDE1221479D660005A8E2 /* DeleteMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190DDE1121479D660005A8E2 /* DeleteMessageView.xib */; };
+		190DDE1521479D700005A8E2 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190DDE1321479D6F0005A8E2 /* NewMessageView.swift */; };
+		190DDE1621479D700005A8E2 /* NewMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190DDE1421479D700005A8E2 /* NewMessageView.xib */; };
+		190DDE1A21479DD80005A8E2 /* UIImage+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190DDE1921479DD80005A8E2 /* UIImage+GIF.swift */; };
+		190DDE1C21479EB50005A8E2 /* bubble4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 190DDE1B21479EB50005A8E2 /* bubble4.gif */; };
 		B6005EE02144FCB2003C2D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6005EDF2144FCB2003C2D69 /* AppDelegate.swift */; };
 		B6005EE22144FCB2003C2D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6005EE12144FCB2003C2D69 /* ViewController.swift */; };
 		B6005EE52144FCB2003C2D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6005EE32144FCB2003C2D69 /* Main.storyboard */; };
@@ -42,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190DDE0F21479D5B0005A8E2 /* DeleteMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteMessageView.swift; sourceTree = "<group>"; };
+		190DDE1121479D660005A8E2 /* DeleteMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteMessageView.xib; sourceTree = "<group>"; };
+		190DDE1321479D6F0005A8E2 /* NewMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		190DDE1421479D700005A8E2 /* NewMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewMessageView.xib; sourceTree = "<group>"; };
+		190DDE1921479DD80005A8E2 /* UIImage+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+GIF.swift"; sourceTree = "<group>"; };
+		190DDE1B21479EB50005A8E2 /* bubble4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bubble4.gif; sourceTree = "<group>"; };
 		B6005EDC2144FCB2003C2D69 /* ToastScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToastScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6005EDF2144FCB2003C2D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6005EE12144FCB2003C2D69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +125,11 @@
 		B6005EDE2144FCB2003C2D69 /* ToastScene */ = {
 			isa = PBXGroup;
 			children = (
+				190DDE1B21479EB50005A8E2 /* bubble4.gif */,
+				190DDE0F21479D5B0005A8E2 /* DeleteMessageView.swift */,
+				190DDE1121479D660005A8E2 /* DeleteMessageView.xib */,
+				190DDE1321479D6F0005A8E2 /* NewMessageView.swift */,
+				190DDE1421479D700005A8E2 /* NewMessageView.xib */,
 				B6005EDF2144FCB2003C2D69 /* AppDelegate.swift */,
 				B6005EE12144FCB2003C2D69 /* ViewController.swift */,
 				B6005F172145005A003C2D69 /* ToastCollectionConstants.swift */,
@@ -122,6 +139,7 @@
 				B6005F0F2144FEFF003C2D69 /* CarouselView.swift */,
 				B6005F112144FF84003C2D69 /* CarousalLayout.swift */,
 				B6005F1B2145059C003C2D69 /* ToastItemCollectionViewCell.swift */,
+				190DDE1921479DD80005A8E2 /* UIImage+GIF.swift */,
 				B6005F1C2145059C003C2D69 /* ToastItemCollectionViewCell.xib */,
 				B6005EE32144FCB2003C2D69 /* Main.storyboard */,
 				B6005EE62144FCB3003C2D69 /* Assets.xcassets */,
@@ -254,10 +272,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6005EEA2144FCB3003C2D69 /* LaunchScreen.storyboard in Resources */,
+				190DDE1221479D660005A8E2 /* DeleteMessageView.xib in Resources */,
 				B6005F1E2145059C003C2D69 /* ToastItemCollectionViewCell.xib in Resources */,
 				B6005EE72144FCB3003C2D69 /* Assets.xcassets in Resources */,
 				B6005EE52144FCB2003C2D69 /* Main.storyboard in Resources */,
+				190DDE1621479D700005A8E2 /* NewMessageView.xib in Resources */,
 				B6005F22214506EE003C2D69 /* ToastViewController.xib in Resources */,
+				190DDE1C21479EB50005A8E2 /* bubble4.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6005EE22144FCB2003C2D69 /* ViewController.swift in Sources */,
+				190DDE1021479D5B0005A8E2 /* DeleteMessageView.swift in Sources */,
+				190DDE1A21479DD80005A8E2 /* UIImage+GIF.swift in Sources */,
 				B6005F122144FF84003C2D69 /* CarousalLayout.swift in Sources */,
 				B6005F1D2145059C003C2D69 /* ToastItemCollectionViewCell.swift in Sources */,
 				B6005EE02144FCB2003C2D69 /* AppDelegate.swift in Sources */,
@@ -290,6 +313,7 @@
 				B6005F102144FEFF003C2D69 /* CarouselView.swift in Sources */,
 				B6005F182145005A003C2D69 /* ToastCollectionConstants.swift in Sources */,
 				B6005F1A214501EB003C2D69 /* ToastViewModel.swift in Sources */,
+				190DDE1521479D700005A8E2 /* NewMessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

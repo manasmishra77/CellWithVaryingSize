@@ -10,7 +10,7 @@ import UIKit
 
 class ToastViewModel: NSObject {
     
-    var toastModels: [String] = ["A", "AAAA", "BBBBB", "D", "F", "A", "AAAA", "BBBBB", "D", "F"]
+    var toastModels: [String] = ["","A", "AAAA", "BBBBB", "D", "F", "A", "AAAA", "BBBBB", "D", "F",""]
     
     
 

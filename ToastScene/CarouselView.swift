@@ -50,7 +50,7 @@ class CarouselView: UICollectionView {
         super.init(coder: aDecoder)
     }
     
-        // MARK: - Overrides
+    // MARK: - Overrides
     
     override open func scrollRectToVisible(_ rect: CGRect, animated: Bool) {
         invisibleScrollView.setContentOffset(rect.origin, animated: animated)
@@ -77,7 +77,26 @@ class CarouselView: UICollectionView {
     public func didScroll() {
         scrollViewDidScroll(self)
     }
-
+    
+    func getInvisibleCollectionViewContent()-> CGPoint {
+        return invisibleScrollView.contentOffset
+    }
+    
+    func reloadCarousalViewOnDelete() {
+        self.reloadData()
+        self.layoutIfNeeded()
+        invisibleScrollView.setContentOffset(CGPoint.init(x: 0, y: 0), animated: true)
+    }
+    
+    func reloadCarousalViewOnAdd() {
+        var contentSet = invisibleScrollView.contentOffset
+        self.reloadData()
+        self.layoutIfNeeded()
+        let numberItems = dataSource?.collectionView(self, numberOfItemsInSection: 1) ?? 4
+        let offSetY = toastItemSize.height * CGFloat(numberItems - 4)
+        contentSet.y = offSetY
+        invisibleScrollView.setContentOffset(contentSet, animated: true)
+    }
 }
 
 private typealias PrivateAPI = CarouselView
@@ -176,7 +195,7 @@ extension ScrollDelegate: UIScrollViewDelegate {
         // Also, this is where we scale our cells
         for cell in visibleCells {
             if let infoCardCell = cell as? ToastItemCollectionViewCell {
-//                print("View frame -- \(cell.frame) and \(self.indexPath(for: cell)) and contenOffSet(\(scrollView.contentOffset)")
+                //                print("View frame -- \(cell.frame) and \(self.indexPath(for: cell)) and contenOffSet(\(scrollView.contentOffset)")
                 infoCardCell.scale(withCarouselInset: 0, contentOffSet: scrollView.contentOffset.y, scale: getScale(offSet: scrollView.contentOffset.y, cellY: cell.frame.origin.y))
                 
             }
